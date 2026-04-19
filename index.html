@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brush Jjaemu</title>
+<meta name="description" content="Brush Jjaemu — a browser-based pet-care survival game where you brush an orange tabby cat." />
+<style>
+  :root {
+    --header-bg: #ffd23a;
+    --header-stripe: #8a1212;
+    --page-bg: #1453c4;
+    --bar-bg: #6e0d0d;
+    --text: #ffffff;
+    --link: #ffe24a;
+    --content-max: 1180px;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--page-bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Top header */
+  .site-header {
+    background: var(--header-bg);
+    border-bottom: 6px solid var(--header-stripe);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #1c6ee0;
+    padding: 8px 22px;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 0 #0a3a82;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #0a3a82;
+  }
+
+  /* Main */
+  main {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Game frame */
+  .game-wrap {
+    width: 100%;
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 6px 0 rgba(0,0,0,0.25);
+  }
+  .game-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+    background: #111;
+  }
+  .game-bar {
+    background: var(--bar-bg);
+    color: #fff;
+    padding: 12px 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  /* Content card */
+  .content {
+    margin-top: 28px;
+    background: #114aa8;
+    border-radius: 6px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+  }
+  .breadcrumb { font-size: 14px; margin-bottom: 14px; opacity: 0.95; }
+  .breadcrumb a { color: var(--link); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  h1, h2, h3 {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #fff;
+    margin: 1.2em 0 0.5em;
+  }
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 6px; }
+  h3 { font-size: 19px; }
+  p, li { color: #f1f5ff; }
+  strong { color: #fff; }
+  em { color: #ffe7a8; }
+  ul { padding-left: 22px; }
+  ul li { margin-bottom: 8px; }
+
+  footer {
+    text-align: center;
+    padding: 24px 16px;
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+  }
+
+  @media (max-width: 640px) {
+    .logo { font-size: 20px; padding: 6px 14px; }
+    .content { padding: 18px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo">BRUSH JJAEMU</a>
+</header>
+
+<main>
+  <!-- Game iframe area -->
+  <div class="game-wrap">
+    <!-- Replace src with your game URL when ready -->
+    <iframe
+      class="game-frame"
+      src="about:blank"
+      title="Brush Jjaemu Game"
+      allow="autoplay; fullscreen; gamepad *;"
+      allowfullscreen
+    ></iframe>
+    <div class="game-bar">BRUSH JJAEMU</div>
+  </div>
+
+  <!-- Article content -->
+  <article class="content">
+    <nav class="breadcrumb">
+      <a href="/">Home</a> » Brush Jjaemu
+    </nav>
+
+    <h1>Brush Jjaemu</h1>
+
+    <h2>About Brush Jjaemu</h2>
+    <p>
+      <strong>Brush Jjaemu</strong> is a <strong>browser-based pet-care survival game</strong>
+      where players <strong>brush an orange tabby cat</strong> named <strong>Jjaemu</strong>.
+      At first, it feels like a soft, almost relaxing experience: just you, a cute cat, and a
+      simple brushing action. But the game doesn't stay in that mood for long. Jjaemu reacts in
+      real time to how you play, and what starts as a gentle interaction slowly turns into a
+      tense test of timing, attention, and self-control.
+    </p>
+
+    <h2>How To Play Brush Jjaemu Game</h2>
+
+    <h3>Enter the Session by Reading the Cat's Mood</h3>
+    <p>
+      Every round starts with observation. Jjaemu's body language tells you everything you need
+      to know if you actually pay attention. Relaxed posture usually means it's safe to begin
+      brushing, while stiff movement or tail flicks signal danger.
+    </p>
+    <ul>
+      <li><em>Example: If Jjaemu is lying still with slow breathing, you can start brushing lightly.
+        But if his tail is twitching rapidly, starting immediately is basically asking to lose.</em></li>
+    </ul>
+
+    <h3>Start Brushing with Controlled Mouse Movement</h3>
+    <p>
+      The core mechanic is simple: move your mouse to brush the cat. But "simple" doesn't mean
+      "mindless." The game reacts strongly to speed changes and chaotic motion.
+    </p>
+  </article>
+</main>
+
+<footer>
+  © Brush Jjaemu — Fan page.
+</footer>
+
+</body>
+</html>
